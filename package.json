@@ -1,0 +1,26 @@
+{
+  "name": "github-actions-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonkii/github-actions-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moonkii/github-actions-example/issues"
+  },
+  "homepage": "https://github.com/moonkii/github-actions-example#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
