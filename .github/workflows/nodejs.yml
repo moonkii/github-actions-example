@@ -19,7 +19,7 @@ jobs:
           npm ci
           npm run build
       - name: Deploy
-        if: github.ref == 'master'
+        if: github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true
         uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
