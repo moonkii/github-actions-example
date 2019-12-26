@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "test": "codeceptjs run --steps",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,10 @@
   },
   "homepage": "https://github.com/moonkii/github-actions-example#readme",
   "devDependencies": {
+    "codeceptjs": "^2.3.6",
+    "concurrently": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
+    "puppeteer": "^2.0.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
